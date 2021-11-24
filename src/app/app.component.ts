@@ -9,6 +9,8 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = environment.title;
   number = 1;
+  username ='';
+
 
   change(): any {
     this.number++;
