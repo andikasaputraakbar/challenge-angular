@@ -10,7 +10,16 @@ export class AppComponent {
   title = environment.title;
   number = 1;
   username ='';
+  hide = false;
+  ngOnInit(): void{
+    if(this.username===''){
+      this.hide=true;
+    }
+  }
 
+  test(): void{
+    this.username='';
+  }
 
   change(): any {
     this.number++;

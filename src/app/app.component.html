@@ -10,10 +10,9 @@
       </p>
       <hr/>
       <label for="">username</label>
-      <input type="text" [(ngModel)]="username"><br>
-      {{username}}
-      <br>
-      <button type="button" class="btn btn-secondary">Reset</button>
+      <br><input type='text' type="form-control" [(ngModel)]='username'/>
+      <br>{{username}}
+      <button [disabled]="username ? false : true" class="btn btn-primary" (click)='test()'>Reset</button>
 
     </div>
   </div>
