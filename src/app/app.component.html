@@ -2,18 +2,19 @@
   <div class="row">
     <div class="col-xs-12">
       <p>
-        Add a Input field which updates a property ('username') via 
-        Two-Way-Binding<br>Output the username property via String Interpolation (in 
-        a paragraph below the input)<br>Add a button which may only be clicked if <br>
-        the username is NOT an empty string <br>  Upon clicking the button, the
-        username should be reset to an empty string <br>
+        Add A button which says 'Display Details' <br />
+        Add a paragraph with any content of your choice (e.g. 'Secret Password =
+        tuna') <br />
+        Toggle the displaying of that paragraph with the button created in the
+        first step <br />
+        Log all button clicks in an array and output that array below the secret
+        paragraph (maybe log a timestamp or simply an incrementing number)
+        <br />
+        Starting at the 5th log item, give all future log items a blue
+        background (via ngStyle) and white color (ngClass)
       </p>
-      <hr/>
-      <label for="">username</label>
-      <br><input type='text' type="form-control" [(ngModel)]='username'/>
-      <br>{{username}}
-      <button [disabled]="username ? false : true" class="btn btn-primary" (click)='test()'>Reset</button>
-
+      <hr />
+      <app-display></app-display>
     </div>
   </div>
 </div>

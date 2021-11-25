@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
-  declarations: [AppComponent, WarningAlertComponent, SuccessAlertComponent],
+  declarations: [AppComponent, WarningAlertComponent, SuccessAlertComponent, DisplayComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
